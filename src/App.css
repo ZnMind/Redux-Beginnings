@@ -10,14 +10,17 @@
 
 .bc {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 25vw;
-    margin-bottom: 2em;
+    margin: 2em;
 }
 
 .bc2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 25vw;
-    margin-bottom: 2em;
+}
+
+button {
+    margin-right: 0.5em;
 }

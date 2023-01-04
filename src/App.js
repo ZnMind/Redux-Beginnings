@@ -34,18 +34,19 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Counter App</h1>
+      <h1>Counter App (Redux)</h1>
+      <h3>Redux Basics: State Management using Reducers, Actions, Dispatch, Slices</h3>
       <h2>{getCount}</h2>
       <h3>{getDbl}</h3>
       <h4>{getDec}</h4>
       <div className='bc'>
-        <button onClick={increment}>Up</button>
-        <button onClick={decrement}>Down</button>
+        <button onClick={increment}>Increment</button>
+        <button onClick={decrement}>Decrement</button>
         <button onClick={addBy}>Add 10</button>
       </div>
       <div className='bc2'>
-        <button onClick={addX}>{`Add ${getCustom}`}</button>
-        <input onChange={e => dispatch(counterActions.customNum(e.target.value))}></input>
+        <button onClick={addX}>{`Add ${getCustom == 0 ? 'X' : getCustom}`}</button>
+        <input onChange={e => dispatch(counterActions.customNum(e.target.value))} placeholder='0' type="number"></input>
       </div>
     </div>
   );
